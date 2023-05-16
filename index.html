@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Beyond Consulting</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  
+    <link href="assets/img/1.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+  <style>
+		#al2,#al3,#al4 {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 9999;
+			padding: 20px;
+			height: 180%;
+      width: 100%;
+		
+			background-color: #fff ;
+			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+			display: none;
+		  }
+
+		  #al1 img,#al2 img,#al3 img ,#al4 img {
+			width: 100%;
+			height: 800px;
+      object-fit: cover;
+		  }
+      #al1{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        padding: 20px;
+        height: 180%;
+        width: 100%;
+      
+        background-color: #fff ;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        display: none;
+        }
+  
+  
+
+      form {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 30px;
+        background-color: #f7f7f7;
+        border: 2px solid black;
+        border-radius: 1px;
+        text-align: center;
+      }
+      
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      select,
+      textarea {
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+      }
+      
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: url('assets/img/fleche.png') no-repeat right center;
+        background-size: 20px;
+        padding-right: 40px;
+      }
+      
+      input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #2a0428;
+      }
+      
+      textarea {
+        height: 150px;
+      }
+      
+      @media (max-width: 600px) {
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+          width: 100%;
+        }
+      }
+
+      footer {
+        color: black;
+        font-size: 14px;
+      }
+      
+      footer h5 {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      
+      footer p {
+        margin-bottom: 0.5rem;
+      }
+      
+      footer ul li {
+        margin-bottom: 0.5rem;
+      }
+      
+      footer a {
+        color: gray;
+        transition: color 0.2s ease-in-out;
+      }
+      
+      footer a:hover {
+        color: gray;
+      }
+      
+      footer img {
+        filter: invert(1);
+        color: white;
+      }
+      .testimonial-card {
+        text-align: center;
+        padding: 30px;
+        margin-top: 10%;
+      }
+  
+      .testimonial-card .testimonial-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+  
+      .testimonial-card .testimonial-text {
+        margin-top: 20px;
+      }
+      
+		  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo">Beyond Consulting</a>
+   
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">ACCEUIL</a></li>
+          <li><a class="nav-link scrollto" href="#about">A PROPOS</a></li>
+          <li><a class="nav-link  scrollto" href="#portfolio">RÉALISATIONS</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="home">
+
+    <div class="container">
+      <div class="hero-content">
+        <h1 style="font-family: MV BOLI; font-size:48px;font-weight: 600; "><span class="typed" data-typed-items="Beyond Consulting, Au-delà de l'évènementiel traditionnel !"></span></h1>
+        <p>Conception, Planification, Coordination</p>
+
+      
+      </div>
+    </div>
+  </div><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <div id="about">
+    <div class=" mb-3 " style="max-width: 99%; margin-top:3%; margin-left:20px";>
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="assets/img/1.png" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8" style="margin-bottom:6%">
+          <div class="card-body" style="margin-top:50px;">
+            <p style="color: black; font-size:30px;margin-left: 6% ;  font-weight: 500;font-family:Arial Black;">BEYOND CONSULTING ;
+              Au-delà de l'évènementiel traditionnel !
+          </p>
+            <p class="card-text" style="margin-left: 6%; color:black;font-weight: 300; font-size:20px; font-family:sans-serif">
+              BEYOND CONSULTING, votre agence d'évènements novateurs. Nous sommes une équipe passionnée et créative spécialisée dans l'organisation d'évènements uniques et mémorables.
+
+              Chez BEYOND CONSULTING, nous croyons que chaque évènement doit être différent et personnalisé pour répondre aux besoins spécifiques de nos clients. Nous nous engageons à offrir des solutions créatives et innovantes qui vont au-delà de vos attentes.
+              
+              Que ce soit pour un lancement de produit, une soirée de gala, une conférence, un Meet  Up ou un évènement de marque, notre équipe travaille en étroite collaboration avec vous pour concevoir et réaliser un évènement exceptionnel qui mettra en valeur votre message et votre image de marque.
+              
+              Nous nous distinguons grâce à notre expertise en matière d'innovation, notre sens de l'esthétique et notre attention aux détails. Notre équipe est composée de professionnels talentueux et passionnés qui sont déterminés à créer des expériences inoubliables pour nos clients.
+              
+              Nous sommes fiers de notre capacité à vous fournir des services de qualité supérieure et à travailler avec vous pour atteindre vos objectifs. 
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- End About Section -->
+
+  <!-- ======= Services Section ======= -->
+  <div id="services">
+    <div class="container">
+      <h1>Nos Services</h1><br>
+
+      <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="services-block">
+              <span>COMMUNICATION</span>
+
+              <img src="assets/img/3201615.png" class="responsive" alt="me" width="70" height="70">
+            </div>
+          </div><!-- End testimonial item -->
+
+      
+
+          <div class="swiper-slide">
+            <div class="services-block">
+              <span>ÉVENNEMENTIEL</span>
+              <img src="assets/img/8403154.png" class="responsive" alt="me" width="70" height="70">
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="swiper-slide">
+            <div class="services-block">
+             <span>SERVICES GRAPHIQUES</span>
+              <img src="assets/img/858719.png" class="responsive" alt="me" width="70" height="70">
+            </div>
+          </div><!-- End testimonial item -->
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+    </div>
+
+  </div><!-- End Services Section -->
+
+  
+    <!-- ======= Portfolio Section ======= -->
+    <div id="portfolio" class="paddsection">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h1 style="color:white;font-family: cursive;">Nos créations évènementielles</h1>
+        </div><br>
+        <div class="section-title text-center">
+          <div class="cont">
+            <h2 class="title">
+              <span class="title-word title-word-1">Efficacite</span>
+              <span class="title-word title-word-2">Innovation</span>
+              <span class="title-word title-word-3">Authenticité</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-6 col-md-8 portfolio-item filter-app">
+            <img src="assets/img/portfolio/1.png" class="img-fluid" onclick="showDialog('al1')" alt="">
+            <div class="portfolio-info">
+              <h4>BOAT BRUNCH PARTY</h4>
+              <p>Boat Brunch Party, une expérience gastronomique immersive qui a laissé un souvenir inoubliable aux participants. Ils ont pu savourer des plats délicieux tout en profitant d'une vue panoramique imprenable sur le lac Togo. Cette expérience a été accompagnée d'une ambiance musicale de qualité pour une atmosphère conviviale et festive. Cet événement exclusif s’est tenu à miadjoe, Aneho, l'un des plus beaux endroits du Togo. Cette ville côtière est connue pour ses paysages époustouflants, ses plages magnifiques et son atmosphère détendue.</p>
+           </div>
+          </div>
+          <div class="col-lg-6 col-md-8 portfolio-item filter-app">
+            <img src="assets/img/portfolio/deborah1.jpeg" class="img-fluid" onclick="showDialog('al2')" alt="">
+            <div class="portfolio-info">
+              <h4>DEBORAH MUTUND</h4>
+              <p>
+                Deborah MUTUND, présentatrice de Chœur des Femmes a choisi Beyond Consulting pour son MEET UP sur des échanges portant sur Comment avoir confiance en soi dans la sphère médiatique en Afrique. Cet événement a été une occasion unique pour les participants d'apprendre des expériences de Deborah MUTUND, une professionnelle de la communication et des médias chevronnée en Afrique.
+                </p>
+           </div>
+          </div>
+
+          <div class="col-lg-6 col-md-8 portfolio-item filter-app">
+            <img src="assets/img/portfolio/a1.jpeg" class="img-fluid" onclick="showDialog('al3')" alt="">
+            <div class="portfolio-info">
+              <h4>Loren Morgan</h4>
+              <p>Le Masterclass de Lauren Morgan, maquilleuse de hautes personnalités, organisé par Beyond Consulting. Ce Masterclass a rassemblé des passionnés de la beauté et du maquillage pour apprendre des techniques professionnelles de Lauren Morgan, une make-up artiste renommée. Les participants ont eu la chance de découvrir les techniques de maquillage utilisées par Lauren Morgan pour sublimer les plus grandes personnalités du monde.</p>
+           </div>
+          </div>
+
+          <div class="col-lg-6 col-md-8 portfolio-item filter-app">
+            <img src="assets/img/portfolio/synday3.jpeg" class="img-fluid" onclick="showDialog('al4')" alt="">
+            <div class="portfolio-info">
+              <h4> Sunday breakfast debate</h4>
+              <p>Le « Sunday breakfast debate » est un cadre convivial d’échanges entre des jeunes leaders d’opinion, entrepreneurs, et autres visionnaires, dans le but de créer une synergie concourant à l’épanouissement de chacun et au progrès commun. 
+                Crée par la structure Beyondconsulting ce concept a germé à partir d’un constat : la nécessité de faire de l’impact avec ce que nous avons, là où nous sommes, ici et maintenant.
+                Nous comptons impulser nos réflexions sur des thématiques importantes pour une dynamique positive au sein de nos communautés.</p>
+           </div>
+          </div>
+       
+
+        </div>
+        
+        <div id="al1">
+          <!-- Gallery -->
+            <div class="row">
+              <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <img
+                src="assets/img/portfolio/tof1.png"
+                class="w-100 shadow-1-strong rounded mb-4"
+              />
+              
+              <img
+                src="assets/img/brunch (108).jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+              />
+              <img
+                src="assets/img/brunch (28).jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+              />
+              <img
+              src="assets/img/brunch (194).jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+            />
+
+              </div>
+            
+              <div class="col-lg-4 col-mb-12 mb-lg-0">
+              <img
+                src="assets/img/brunch (35).jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+              />
+            
+              <img
+                src="assets/img/portfolio/tof4.png"
+                class="w-100 shadow-1-strong rounded mb-4"
+              />
+              <img
+                src="assets/img/brunch (156).jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+              />
+
+              <img
+                src="assets/img/brunch (188).jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+              />
+              </div>
+              
+            
+              <div class="col-lg-4 col-mb-12 mb-lg-0">
+              <img
+                src="assets/img/portfolio/9.png"
+                class="w-100 shadow-1-strong rounded mb-4"
+              />
+            
+              <img
+                src="assets/img/brunch (173).jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+              />
+              <img
+                src="assets/img/brunch (104).jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+              />
+              <img
+                src="assets/img/brunch (77).jpg"
+                class="w-100 shadow-1-strong rounded mb-4"
+              />
+              </div>
+            </div>
+        <!-- Gallery -->
+            <button onclick="hideDialog('al1')">Fermer</button>
+          </div>
+           
+        <div id="al2">
+          <!-- Gallery -->
+            <div class="row">
+              <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <a href="">
+                      <img width="600px" height="600px"
+                src="assets/img/portfolio/deborah2.jpeg"
+                class="w-100 shadow-1-strong rounded mb-4"
+              />
+                </a>
+          
+            
+              <img width="600px" height="600px"
+                src="assets/img/portfolio/deborah3.jpeg"
+                class="w-100 shadow-1-strong rounded mb-4"
+              />
+              </div>
+            
+              <div class="col-lg-4 mb-4 mb-lg-0">
+              <img width="600px" height="600px"
+                src="assets/img/portfolio/deborah4.JPG"
+                class="w-100 shadow-1-strong rounded mb-4"
+              />
+            
+              <img width="600px" height="600px"
+                src="assets/img/portfolio/deborah5.JPG"
+                class="w-100 shadow-1-strong rounded mb-4"
+              />
+              </div>
+            
+              <div class="col-lg-4 mb-4 mb-lg-0">
+              <img width="600px" height="600px"
+                src="assets/img/portfolio/deborah7.JPG"
+                class="w-100 shadow-1-strong rounded mb-4"
+                
+              />
+            
+              <img
+                src="assets/img/portfolio/deborah8.JPG"
+                class="w-100 shadow-1-strong rounded mb-4"
+              />
+              </div>
+            </div>
+        <!-- Gallery -->
+            <button onclick="hideDialog('al2')">Fermer</button>
+          </div>
+
+          <div id="al3">
+            <!-- Gallery -->
+              <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                  <a href="">
+                        <img
+                  src="assets/img/portfolio/a2.jpeg"
+                  class="w-100 shadow-1-strong rounded mb-4"
+                />
+                  </a>
+            
+              
+                <img
+                  src="assets/img/portfolio/a3.jpeg"
+                  class="w-100 shadow-1-strong rounded mb-4"
+                />
+                </div>
+              
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                <img
+                  src="assets/img/portfolio/a4.jpeg"
+                  class="w-100 shadow-1-strong rounded mb-4"
+                />
+              
+                <img
+                  src="assets/img/portfolio/a5.jpeg"
+                  class="w-100 shadow-1-strong rounded mb-4"
+                />
+                </div>
+              
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                <img
+                  src="assets/img/portfolio/a6.jpeg"
+                  class="w-100 shadow-1-strong rounded mb-4"
+                />
+              
+                <img
+                  src="assets/img/portfolio/a9.jpeg"
+                  class="w-100 shadow-1-strong rounded mb-4"
+                />
+                
+                </div>
+              </div>
+          <!-- Gallery -->
+              <button onclick="hideDialog('al3')">Fermer</button>
+            </div>
+            <div id="al4">
+              <!-- Gallery -->
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <a href="">
+                          <img
+                    src="assets/img/portfolio/synday1.jpeg"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                  />
+                    </a>
+              
+                
+                  <img
+                    src="assets/img/portfolio/synday2.jpeg"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                  />
+                  </div>
+                
+                  <div class="col-lg-4 mb-4 mb-lg-0">
+                  <img
+                    src="assets/img/portfolio/synday4.jpeg"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                  />
+                
+                  <img
+                    src="assets/img/portfolio/synday5.png"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                  />
+                  </div>
+                
+                  <div class="col-lg-4 mb-4 mb-lg-0">
+                  <img
+                    src="assets/img/portfolio/synday6.png"
+                    class="w-100 shadow-1-strong rounded mb-4"
+               />
+                
+                  <img
+                    src="assets/img/portfolio/synday7.png"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                  />
+                  </div>
+                </div>
+            <!-- Gallery -->
+                <button onclick="hideDialog('al4')">Fermer</button>
+              </div>
+      </div>
+      <script>
+        function showDialog(album) {
+          // afficher le dialogue
+            document.getElementById(album).style.display = "block";
+        }
+        
+        function hideDialog(album) {
+          // cacher le dialogue
+            document.getElementById(album).style.display = "none";
+          
+        }
+        </script>
+          
+
+    </div><!-- End Portfolio Section -->
+
+    
+    <div class="container">
+        <div class="temoignage">
+          <h2>Témoignages</h>
+        </div>
+    
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card testimonial-card">
+                <div class="testimonial-photo">
+                  <img src="assets/img/portfolio/5.png" alt="John Doe" width="150px" height="200px">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Déborah MUTUND</h5>
+                <p class="card-text testimonial-text">"Merci infiniment à toute l'équipe étendue pour l'organisation de ce bel événement et l'acceuil très chalereux de tous les participants. Vous êtes incroyables, ne changez pas! "</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card testimonial-card">
+                <div class="testimonial-photo">
+                  <img src="assets/img/portfolio/fem.png" alt="Jane Smith" width="150px" height="120px">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Nadiaka Vêtements</h5>
+                  <p class="card-text testimonial-text">"Il me semble que tous les events organisés par beyond consulting sont de belles réussites.C'est le cas de le dire:n'hesitez pas à collaborer avec Beyond consulting.Eyram:force à toi et toute ton équipe.  "</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <div id="contact" class="paddsection">
+      <div class="container">
+        <div class="contact-block1">
+          <div class="row">
+
+
+                <h2 class="mb-30" style="text-align:center"> DEMANDE DE RENDEZ-VOUS POUR UN ÉVÉNEMENT</h2>
+         
+
+                <form class="needs-validation" action="./php/mail.php" method="POST" novalidate>
+                  <div class="form-group">
+                    <label for="nom">Nom / Nom de la Société</label>
+                    <input type="text" class="form-control" id="nom" name="nom" required>
+                    <div class="invalid-feedback">Veuillez saisir votre nom.</div>
+                  </div>
+                
+                  <div class="form-group">
+                    <label for="email">Adresse e-mail :</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                    <div class="invalid-feedback">Veuillez saisir une adresse e-mail valide.</div>
+                  </div>
+                
+                  <div class="form-group">
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" class="form-control" id="telephone" name="telephone" required>
+                    <div class="invalid-feedback">Veuillez saisir votre numéro de téléphone.</div>
+                  </div>
+                
+                  <div class="form-group">
+                    <label for="evenement" style="text-align: center;">Type d'Événement :</label>
+                    <select class="form-control" id="evenement" name="evenement" required>
+                      <option value="">-- Sélectionnez un type d'événement --</option>
+                      <optgroup label="Événement Personnel">
+                        <option value="anniversaire">Anniversaire</option>
+                        <option value="mariage">Mariage</option>
+                        <option value="baptême">Baptême</option>
+                        <option value="autre">Autre...</option>
+                      </optgroup>
+                      <optgroup label="Événement d'Entreprise">
+                        <option value="journée_etude">Journée d'Étude</option>
+                        <option value="conférence_congrès">Conférence et Congrès</option>
+                        <option value="team_building">Team Building</option>
+                        <option value="lancement_produit">Lancement de Produit</option>
+                      </optgroup>
+                      <optgroup label="Événement Grand Public">
+                        <option value="concert">Concert</option>
+                        <option value="soirée">Soirée</option>
+                        <option value="défilé_mode">Défilé de Mode</option>
+                        <option value="soirée_récompense">Soirée Récompense</option>
+                        <option value="festival">Festival</option>
+                        <option value="salon_exposition_foire">Salon d'Exposition et Foire</option>
+                        <option value="séminaire">Séminaire</option>
+                        <option value="congrès">Congrès</option>
+                      </optgroup>
+                    </select>
+                    <div class="invalid-feedback">Veuillez sélectionner un type d'événement.</div>
+                  </div>
+                
+                  <div class="form-group">
+                    <label for="format">Format de l'Événement :</label>
+                    <select class="form-control" id="format" name="format" required>
+                      <option value="">-- Sélectionnez un format d'événement --</option>
+                      <option value="petit_dejeuner">Petit Déjeuner</option>
+                      <option value="pause_café">Pause-Café</option>
+                      <option value="dejeuner">Déjeuner</option>
+                      <option value="cocktail_debout">Cocktail Debout</option>
+                      <option value="cocktail_dinatoire">Cocktail Dinatoire</option>
+                      <option value="diner_gala">Dîner Gala</option>
+                      <option value="diner">Dîner</option>
+                      <option value="soiree_dansante">Soirée Dansante</option>
+                      </select>
+                      
+                       </div>
+                       <div class="form-group">
+                          <label for="date">Date (date à laquelle doit tenir l'événement):</label>
+                          <input type="date" class="form-control" id="date" name="date" required>
+                       </div>
+                       <div class="form-group">
+                          <label for="lieux">Lieux (mentionner si vous avez une préférence):</label>
+                          <input type="text" class="form-control" id="lieux" name="lieux" required>
+                       </div>
+                       <div class="form-group">
+                          <label for="ville">Ville :</label>
+                          <input type="text" class="form-control" id="ville" name="ville" required>
+                       </div>
+                       <div class="form-group">
+                          <label for="nombre_invites">Nombre Potentiels d'Invités attendus :</label>
+                          <input type="number" class="form-control" id="nombre_invites" name="nombre_invites" required>
+                       </div>
+                       <div class="form-group">
+                          <label for="prestataire">Prestataires (mentionner si vous avez une préférence) :</label>
+                          <input type="text" class="form-control" id="prestataire" name="prestataire" required>
+                       </div>
+                      <button type="submit" class="btn btn-primary">Envoyer</button>
+                      
+                      </form>
+                
+
+          </div>
+        </div>
+      </div>
+    </div><!-- End Contact Section -->
+
+
+  </main><!-- End #main -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3 mb-md-0 border-end border-white pe-md-5">
+          <h5 class="text-white mb-3">Contact</h5>
+          <p>Lomé,TOGO</p>
+          <p>Phone: 0022870516984</p>
+          <p>Email: Beyondconsulting22@gmail.com</p>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0 border-end border-white pe-md-5">
+          <h5 class="text-white mb-3">Liens utiles</h5>
+          <ul class="list-unstyled">
+            <li><a href="#hero">Acceuil</a></li>
+            <li><a href="#about">A Propos</a></li>
+            <li><a href="#portfolio">Réalisations</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3 mb-md-0 d-flex align-items-center justify-content-center">
+          <a href="https://www.facebook.com/profile.php?id=100087396066490">
+            <img src="assets/img/facebook.png" alt="Facebook" width="40" height="40">
+          </a>
+          <a href="https://instagram.com/beyond.consulting_?igshid=YmMyMTA2M2Y=">
+            <img src="assets/img/instagram.png" alt="Instagram" width="40" height="40" class="ms-3">
+          </a>
+        </div>
+      </div>
+    </div>
+    <p style="margin-top:3%; text-align:center;">&copy;BEYOND CONSULTING. Tout Droit Réservé.</p> 
+
+  </footer>
+  
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
